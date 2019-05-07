@@ -6,7 +6,7 @@ Specification:
 - SQLite
 
 ### Problem found
-- I cannot send whatsapp message to candidate as file attachment due to missing domain pointing to real file location, it can be solved by using s3 or setup ngrok. However I leave uncommented code on `CandidateController.php:76,83,84` as references.
+- I cannot send whatsapp message to candidate as file attachment due to missing domain pointing to real file location, it can be solved by using s3 or setup ngrok. However I leave commented code on `CandidateController.php:76,83,84` as references.
 - Code for webhook not tested due to same problem with no real domain for webhook url.
 
 ### Step to run:
@@ -23,5 +23,5 @@ open browser http://127.0.0.1:8000
 
 ### .env settings
 - for quick start use sqlite as database
-- for chatapi please add required env variable, by registering on chat-api.com website
+- for chatapi please add required env variables, by registering on chat-api.com website
 - for smtp, I use mailtrap.io for testing
