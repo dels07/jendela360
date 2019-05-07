@@ -79,7 +79,7 @@ class CandidateController extends Controller
         $token    = config('services.chatapi.key');
         $data     = json_encode([
             'phone'    => '62'.ltrim($candidate->phone, '0'), // international standard number
-            'body'     => asset('pdf/'.$candidate->file),
+            'body'     => asset('kontrak-'.Str::slug($candidate->name).'.pdf'),
             // 'filename' => $candidate->file,
             // 'caption'  => 'Kontrak Kerja '.$candidate->name
         ]);
