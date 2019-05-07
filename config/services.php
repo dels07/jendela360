@@ -44,4 +44,10 @@ return [
         ],
     ],
 
+    'chatapi' => [
+        'instance' => env('CHATAPI_INSTANCE'),
+        'url' => env('CHATAPI_URL'),
+        'key' => env('CHATAPI_KEY'),
+    ],
+
 ];
